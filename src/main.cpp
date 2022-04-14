@@ -5,7 +5,7 @@
 #include <spdlog/spdlog.h>
 
 // This file will be generated automatically when you run the CMake configuration step.
-// It creates a namespace called `myproject`.
+// It creates a namespace called `asio_mqtt`.
 // You can modify the source template at `configured_files/config.hpp.in`.
 #include <internal_use_only/config.hpp>
 
@@ -34,8 +34,8 @@ int main(int argc, const char **argv)
       { std::next(argv), std::next(argv, argc) },
       true,// show help if requested
       fmt::format("{} {}",
-        myproject::cmake::project_name,
-        myproject::cmake::project_version));// version string, acquired from config.hpp via CMake
+        asio_mqtt::cmake::project_name,
+        asio_mqtt::cmake::project_version));// version string, acquired from config.hpp via CMake
 
     for (auto const &arg : args) { std::cout << arg.first << "=" << arg.second << '\n'; }
 
